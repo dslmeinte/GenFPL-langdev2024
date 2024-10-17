@@ -1,0 +1,29 @@
+{
+  "name": "LangDev2024-GenFPL-demo-gen",
+  "version": "0.0.0-dev",
+  "description": "generation of artifacts for demo for GenFPL",
+  "author": "Meinte Boersma (DSL Consultancy)",
+  "license": "Apache-2.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dslmeinte/GenFPL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dslmeinte/GenFPL/issues"
+  },
+  "scripts": {
+    "clean": "rm -rf dist/ && rm -rf node_modules/",
+    "build": "tsc",
+    "lint": "eslint src",
+    "pregenerate": "npm run build",
+    "generate": "node dist/generate.js"
+  },
+  "devDependencies": {
+    "@lionweb/core": "0.6.9",
+    "@lionweb/utilities": "0.6.9",
+    "@types/node": "22.7.5",
+    "genfpl": "0.1.1",
+    "typescript": "5.3.3"
+  }
+}

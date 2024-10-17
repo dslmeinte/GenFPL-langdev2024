@@ -1,0 +1,34 @@
+{
+  "name": "LangDev2024-GenFPL-demo-project",
+  "version": "0.0.0-dev",
+  "description": "DSL-embeddable functional programming languages",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dslmeinte/GenFPL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dslmeinte/GenFPL/issues"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "6.21.0",
+    "@typescript-eslint/parser": "6.21.0",
+    "typescript": "5.3.3"
+  },
+  "scripts": {
+    "initialize": "npm run clean && npm install && npm run build",
+    "clean": "rm -rf node_modules/ && npm run clean -w packages --if-present",
+    "build": "npm run build -w packages --if-present",
+    "lint": "npm run lint -w packages --if-present",
+    "pretest": "npm run build",
+    "test": "npm run test -w packages --if-present",
+    "prerelease": "npm run initialize",
+    "release": "npm run release -w packages --if-present",
+    "release-beta": "npm run release-beta -w packages --if-present"
+  },
+  "private": false,
+  "workspaces": [
+    "./packages/demo",
+    "./packages/demo-gen"
+  ]
+}

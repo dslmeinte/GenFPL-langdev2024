@@ -1,0 +1,17 @@
+language HostLanguage
+    version: 1
+    entities (↓name):
+
+        concept Attribute implements INamed
+            features (↓name):
+                type -> Type
+
+        concept RecordDefinition implements INamed
+            features (↓name):
+                attributes: Attribute[1..*]
+
+        interface Type
+
+        interface Value
+
+

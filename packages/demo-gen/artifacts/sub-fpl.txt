@@ -1,0 +1,49 @@
+language SubLanguage
+    version: 0
+    entities (↓name):
+
+        concept AttributeValue
+            features (↓name):
+                value: Value
+
+        concept BooleanBinaryOperation extends BooleanValue
+            features (↓name):
+                left: Value
+                operator: BooleanBinaryOperators
+                right: Value
+
+        enumeration BooleanBinaryOperators
+            literals:
+                and
+                or
+
+        concept BooleanLiteral extends BooleanValue
+            features (↓name):
+                value: Boolean
+
+        concept BooleanNegation extends BooleanValue
+            features (↓name):
+                operand: Value
+
+        concept BooleanType implements Type
+
+        concept BooleanValue implements Value
+
+        concept DotExpression implements Value
+            features (↓name):
+                attribute -> Attribute
+                instance: Value
+
+        concept RecordInstance implements Value
+            features (↓name):
+                attributeValues: AttributeValue[1..*]
+
+        annotation comments
+            features (↓name):
+                comment: String
+
+        annotation comments
+            features (↓name):
+                comment: String
+
+

@@ -1,0 +1,58 @@
+@startuml
+hide empty members
+
+' qualified name: "SubLanguage"
+
+
+class AttributeValue
+
+class BooleanBinaryOperation extends BooleanValue {
+  operator: BooleanBinaryOperators
+}
+
+enum BooleanBinaryOperators {
+  and
+  or
+}
+
+class BooleanLiteral extends BooleanValue {
+  value: Boolean
+}
+
+class BooleanNegation extends BooleanValue
+
+class BooleanType implements Type
+
+class BooleanValue implements Value
+
+class DotExpression implements Value
+
+class RecordInstance implements Value
+
+annotation comments {
+  comment: String
+}
+
+annotation comments {
+  comment: String
+}
+
+
+
+' relations:
+
+AttributeValue "1" o--> "1" Value: value
+BooleanBinaryOperation "1" o--> "1" Value: left
+BooleanBinaryOperation "1" o--> "1" Value: right
+
+
+BooleanNegation "1" o--> "1" Value: operand
+
+
+DotExpression "1" o--> "1" Value: instance
+DotExpression "*" --> "1" Attribute: attribute
+RecordInstance "1" o--> "*" AttributeValue: attributeValues
+
+
+
+@enduml
