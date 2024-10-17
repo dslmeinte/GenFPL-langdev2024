@@ -1,0 +1,12 @@
+# NPM:
+node_modules/
+
+# compiled:
+dist/
+
+# IntelliJ IDEA:
+.idea/
+
+# Work-in-Progress:
+/notes.md
+
