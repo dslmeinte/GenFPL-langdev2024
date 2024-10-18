@@ -2,8 +2,6 @@ import {DynamicNode, ExtractionFacade} from "@lionweb/core"
 import {SubLanguageDefaultInterpreter} from "../gen/interpreter.default.js"
 
 
-class SubLanguageInterpreter extends SubLanguageDefaultInterpreter<DynamicNode> {}
-
 export const dynamicExtractionFacade: ExtractionFacade<DynamicNode> = ({
     classifierOf: (node) => node.classifier,
     getFeatureValue: (node, feature) =>
@@ -12,8 +10,10 @@ export const dynamicExtractionFacade: ExtractionFacade<DynamicNode> = ({
     enumerationLiteralFrom: (value, enumeration) =>
         enumeration.literals.find(({name}) => name === value)
         ?? null,    // (undefined -> null)
-    // TODO  resolveInfoFor
 })
+
+
+class SubLanguageInterpreter extends SubLanguageDefaultInterpreter<DynamicNode> {}
 
 export const interpreter = new SubLanguageInterpreter(dynamicExtractionFacade)
 

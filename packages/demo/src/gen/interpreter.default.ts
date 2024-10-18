@@ -57,7 +57,7 @@ export abstract class SubLanguageDefaultInterpreter<NT extends Node> {
             throw new Error(`left-hand side of . expression is not a RecordInstance`);
         }
         const right = this.valueOfFeature(expression, classifier, "sub-fpl-DotExpression-right") as NT;
-        if (this.extractionFacade.classifierOf(right).key !== "host-lang-Attribute") {
+        if (this.extractionFacade.classifierOf(right).key !== "HostLanguage-Attribute") {
             throw new Error(`right-hand side of . expression is not (a reference to) an Attribute`);
         }
         throw new Error(`fail - gave up here...`);

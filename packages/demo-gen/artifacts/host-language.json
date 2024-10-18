@@ -12,7 +12,7 @@
   ],
   "nodes": [
     {
-      "id": "host-lang",
+      "id": "HostLanguage",
       "classifier": {
         "language": "LionCore-M3",
         "version": "2023.1",
@@ -33,7 +33,7 @@
             "version": "2023.1",
             "key": "IKeyed-key"
           },
-          "value": "host-lang"
+          "value": "HostLanguage"
         },
         {
           "property": {
@@ -52,10 +52,10 @@
             "key": "Language-entities"
           },
           "children": [
-            "Value",
-            "Type",
-            "host-lang-Attribute",
-            "host-lang-RecordDefinition"
+            "HostLanguage-Value",
+            "HostLanguage-Type",
+            "HostLanguage-Attribute",
+            "HostLanguage-RecordDefinition"
           ]
         }
       ],
@@ -73,7 +73,7 @@
       "parent": null
     },
     {
-      "id": "Value",
+      "id": "HostLanguage-Value",
       "classifier": {
         "language": "LionCore-M3",
         "version": "2023.1",
@@ -86,7 +86,7 @@
             "version": "2023.1",
             "key": "IKeyed-key"
           },
-          "value": "Value"
+          "value": "HostLanguage-Value"
         },
         {
           "property": {
@@ -118,10 +118,10 @@
         }
       ],
       "annotations": [],
-      "parent": "host-lang"
+      "parent": "HostLanguage"
     },
     {
-      "id": "Type",
+      "id": "HostLanguage-Type",
       "classifier": {
         "language": "LionCore-M3",
         "version": "2023.1",
@@ -134,7 +134,7 @@
             "version": "2023.1",
             "key": "IKeyed-key"
           },
-          "value": "Type"
+          "value": "HostLanguage-Type"
         },
         {
           "property": {
@@ -166,10 +166,10 @@
         }
       ],
       "annotations": [],
-      "parent": "host-lang"
+      "parent": "HostLanguage"
     },
     {
-      "id": "host-lang-Attribute",
+      "id": "HostLanguage-Attribute",
       "classifier": {
         "language": "LionCore-M3",
         "version": "2023.1",
@@ -198,7 +198,7 @@
             "version": "2023.1",
             "key": "IKeyed-key"
           },
-          "value": "host-lang-Attribute"
+          "value": "HostLanguage-Attribute"
         },
         {
           "property": {
@@ -217,7 +217,7 @@
             "key": "Classifier-features"
           },
           "children": [
-            "host-lang-Attribute-type"
+            "HostLanguage-Attribute-type"
           ]
         }
       ],
@@ -245,10 +245,10 @@
         }
       ],
       "annotations": [],
-      "parent": "host-lang"
+      "parent": "HostLanguage"
     },
     {
-      "id": "host-lang-Attribute-type",
+      "id": "HostLanguage-Attribute-type",
       "classifier": {
         "language": "LionCore-M3",
         "version": "2023.1",
@@ -277,7 +277,7 @@
             "version": "2023.1",
             "key": "IKeyed-key"
           },
-          "value": "host-lang-Attribute-type"
+          "value": "HostLanguage-Attribute-type"
         },
         {
           "property": {
@@ -299,16 +299,16 @@
           "targets": [
             {
               "resolveInfo": "Type",
-              "reference": "Type"
+              "reference": "HostLanguage-Type"
             }
           ]
         }
       ],
       "annotations": [],
-      "parent": "host-lang-Attribute"
+      "parent": "HostLanguage-Attribute"
     },
     {
-      "id": "host-lang-RecordDefinition",
+      "id": "HostLanguage-RecordDefinition",
       "classifier": {
         "language": "LionCore-M3",
         "version": "2023.1",
@@ -337,7 +337,7 @@
             "version": "2023.1",
             "key": "IKeyed-key"
           },
-          "value": "host-lang-RecordDefinition"
+          "value": "HostLanguage-RecordDefinition"
         },
         {
           "property": {
@@ -356,7 +356,7 @@
             "key": "Classifier-features"
           },
           "children": [
-            "host-lang-RecordDefinition-attributes"
+            "HostLanguage-RecordDefinition-attributes"
           ]
         }
       ],
@@ -384,10 +384,10 @@
         }
       ],
       "annotations": [],
-      "parent": "host-lang"
+      "parent": "HostLanguage"
     },
     {
-      "id": "host-lang-RecordDefinition-attributes",
+      "id": "HostLanguage-RecordDefinition-attributes",
       "classifier": {
         "language": "LionCore-M3",
         "version": "2023.1",
@@ -416,7 +416,7 @@
             "version": "2023.1",
             "key": "IKeyed-key"
           },
-          "value": "host-lang-RecordDefinition-attributes"
+          "value": "HostLanguage-RecordDefinition-attributes"
         },
         {
           "property": {
@@ -438,13 +438,13 @@
           "targets": [
             {
               "resolveInfo": "Attribute",
-              "reference": "host-lang-Attribute"
+              "reference": "HostLanguage-Attribute"
             }
           ]
         }
       ],
       "annotations": [],
-      "parent": "host-lang-RecordDefinition"
+      "parent": "HostLanguage-RecordDefinition"
     }
   ]
 }

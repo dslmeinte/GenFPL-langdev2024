@@ -148,7 +148,7 @@
           "targets": [
             {
               "resolveInfo": "Type",
-              "reference": "Type"
+              "reference": "HostLanguage-Type"
             }
           ]
         }
@@ -225,7 +225,7 @@
           "targets": [
             {
               "resolveInfo": "Value",
-              "reference": "Value"
+              "reference": "HostLanguage-Value"
             }
           ]
         }
@@ -549,7 +549,7 @@
           "targets": [
             {
               "resolveInfo": "Value",
-              "reference": "Value"
+              "reference": "HostLanguage-Value"
             }
           ]
         }
@@ -609,7 +609,7 @@
           "targets": [
             {
               "resolveInfo": "Value",
-              "reference": "Value"
+              "reference": "HostLanguage-Value"
             }
           ]
         }
@@ -850,7 +850,7 @@
           "targets": [
             {
               "resolveInfo": "Value",
-              "reference": "Value"
+              "reference": "HostLanguage-Value"
             }
           ]
         }
@@ -930,7 +930,7 @@
           "targets": [
             {
               "resolveInfo": "Value",
-              "reference": "Value"
+              "reference": "HostLanguage-Value"
             }
           ]
         }
@@ -990,7 +990,7 @@
           "targets": [
             {
               "resolveInfo": "Value",
-              "reference": "Value"
+              "reference": "HostLanguage-Value"
             }
           ]
         }
@@ -1050,7 +1050,7 @@
           "targets": [
             {
               "resolveInfo": "Attribute",
-              "reference": "host-lang-Attribute"
+              "reference": "HostLanguage-Attribute"
             }
           ]
         }
@@ -1184,7 +1184,7 @@
           "targets": [
             {
               "resolveInfo": "Value",
-              "reference": "Value"
+              "reference": "HostLanguage-Value"
             }
           ]
         }
@@ -1263,7 +1263,7 @@
           "targets": [
             {
               "resolveInfo": "Value",
-              "reference": "Value"
+              "reference": "HostLanguage-Value"
             }
           ]
         }
