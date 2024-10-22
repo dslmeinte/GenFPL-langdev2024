@@ -1,7 +1,7 @@
 # README
 
 This repository contains the code for the presentation “GenFPL: DSL-embeddable functional programming languages” that I gave during the [LangDev 2024 conference](https://langdevcon.org/).
-It also contains the [**slides for this presentation**](./presentation.pdf).
+It also contains the [**slides for that presentation**](./GenFPL-Meinte%20Boersma-LangDev%202024.pdf).
 
 [GenFPL repository](https://github.com/dslmeinte/GenFPL/)
 
